@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://adryanantiporda.vercel.app/opengraph-image" alt="Adryan Antiporda — Full Stack Developer" width="100%">
+<img src="https://adryanantiporda.vercel.app/banner.svg" alt="Adryan Antiporda — Full Stack Developer" width="100%">
 
 `↳ FULL STACK DEVELOPER · BACKEND · AI · WEB DEVELOPMENT`
 
