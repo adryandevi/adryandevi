@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Adryan Antiporda — Full Stack Developer">
+  <title>Adryan Antiporda — Full Stack Developer</title>
+
+  <!-- Animated banner for the GitHub profile README. No script: GitHub
+       sandboxes SVG, so entrance motion is CSS keyframes and the typing
+       effect is SMIL on a clipPath width. Colours and framing match the
+       site (navy ground, purple-400 accent, corner crop brackets).
+
+       Every element's *resting* state is the finished one, and the
+       animations run from hidden towards it (fill-mode: backwards; SMIL
+       values starting at 0). A renderer that ignores animation — a
+       screenshot tool, an email client — therefore shows the complete
+       banner rather than an empty rectangle. -->
+
+  <style>
+    .brkt  { stroke: #c084fc; stroke-width: 3; fill: none;
+             stroke-dasharray: 80; stroke-dashoffset: 0;
+             animation: draw .9s ease-out backwards; }
+    .name  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+             font-weight: 800; font-size: 88px; fill: #fff;
+             letter-spacing: -2px;
+             animation: rise .7s cubic-bezier(.2,.7,.3,1) backwards; }
+    .mono  { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+             font-size: 19px; letter-spacing: 2px; }
+    .meta  { fill: rgba(255,255,255,.45);
+             animation: fade .6s ease-out .15s backwards; }
+    .dot   { fill: #c084fc; animation: pulse 2.4s ease-in-out 1.4s infinite; }
+    .cur   { fill: #c084fc; animation: blink 1s steps(2) infinite; }
+    .d1 { animation-delay: .25s } .d2 { animation-delay: .45s }
+    .b2 { animation-delay: .1s } .b3 { animation-delay: .2s } .b4 { animation-delay: .3s }
+
+    @keyframes draw  { from { stroke-dashoffset: 80 } }
+    @keyframes fade  { from { opacity: 0 } }
+    @keyframes rise  { from { opacity: 0; transform: translateY(18px) } }
+    @keyframes pulse { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+    @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+
+    /* Respect the reader's motion preference: show the finished state. */
+    @media (prefers-reduced-motion: reduce) {
+      .brkt, .name, .meta, .dot, .cur { animation: none }
+    }
+  </style>
+
+  <rect width="1200" height="360" fill="#001f3f"/>
+
+  <!-- Faint grid, echoing the site's section texture -->
+  <g stroke="#ffffff" stroke-opacity=".035" stroke-width="1">
+    <path d="M0 90h1200M0 180h1200M0 270h1200"/>
+    <path d="M300 0v360M600 0v360M900 0v360"/>
+  </g>
+
+  <!-- Corner crop brackets -->
+  <path class="brkt"    d="M24 60V24h36"/>
+  <path class="brkt b2" d="M1140 24h36v36"/>
+  <path class="brkt b3" d="M24 300v36h36"/>
+  <path class="brkt b4" d="M1176 300v36h-36"/>
+
+  <text class="mono meta" x="72" y="58">
+    <tspan fill="#c084fc">↳</tspan>  ADRYANANTIPORDA.VERCEL.APP
+  </text>
+
+  <text class="name d1" x="72" y="180">ADRYAN</text>
+  <text class="name d2" x="1128" y="262" text-anchor="end">ANTIPORDA<tspan class="dot">.</tspan></text>
+
+  <!-- Typing line: each phrase is revealed by its own clipPath rect. The
+       rects rest at full width so the first phrase survives a still render. -->
+  <defs>
+    <clipPath id="t1"><rect x="72" y="304" height="26" width="260">
+      <animate attributeName="width" dur="12s" repeatCount="indefinite"
+               values="0;260;260;0;0" keyTimes="0;0.083;0.30;0.333;1"/>
+    </rect></clipPath>
+    <clipPath id="t2"><rect x="72" y="304" height="26" width="0">
+      <animate attributeName="width" dur="12s" repeatCount="indefinite"
+               values="0;0;235;235;0;0" keyTimes="0;0.333;0.417;0.633;0.667;1"/>
+    </rect></clipPath>
+    <clipPath id="t3"><rect x="72" y="304" height="26" width="0">
+      <animate attributeName="width" dur="12s" repeatCount="indefinite"
+               values="0;0;260;260;0" keyTimes="0;0.667;0.75;0.967;1"/>
+    </rect></clipPath>
+  </defs>
+
+  <g class="mono" fill="#ffffff">
+    <text x="72" y="324" clip-path="url(#t1)">FULL STACK DEVELOPER</text>
+    <text x="72" y="324" clip-path="url(#t2)">BACKEND · AI · IOT</text>
+    <text x="72" y="324" clip-path="url(#t3)">BSIT · ICCT COLLEGES</text>
+  </g>
+
+  <rect class="cur" y="306" width="11" height="22" x="322">
+    <animate attributeName="x" dur="12s" repeatCount="indefinite"
+             values="72;322;322;72;297;297;72;322;322;72"
+             keyTimes="0;0.083;0.30;0.333;0.417;0.633;0.667;0.75;0.967;1"/>
+  </rect>
+</svg>
