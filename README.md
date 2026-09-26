@@ -66,3 +66,13 @@ where the backend meets something physical or something intelligent.
 **[Portfolio](https://adryanantiporda.vercel.app)** · **[LinkedIn](https://www.linkedin.com/in/adryan-antiporda)** · **[Email](https://adryanantiporda.vercel.app/#contact)**
 
 </div>
+
+---
+
+<div align="center">
+
+`↳ CONTRIBUTION GRAPH`
+
+<img src="https://raw.githubusercontent.com/adryandevi/adryandevi/output/snake.svg" alt="A snake eating my GitHub contribution graph" width="100%">
+
+</div>
