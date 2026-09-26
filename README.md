@@ -73,6 +73,6 @@ where the backend meets something physical or something intelligent.
 
 `↳ CONTRIBUTION GRAPH`
 
-<img src="github-profile-snake-workflow.yml" alt="A snake eating my GitHub contribution graph" width="100%">
+<img src="https://raw.githubusercontent.com/adryandevi/adryandevi/output/snake.svg" alt="A snake eating my GitHub contribution graph" width="100%">
 
 </div>
